@@ -28,13 +28,13 @@ To help the research about indoor localization , we introduce a new indoor image
 
 More description of the dataset can be found in [this paper](https://arxiv.org/abs/2012.00234):
 
-> Dongjiang Li et al. "RaP-Net: A Region-wise and Point-wise Weighting Network to Extract Robust Keypoints for Indoor Localization." arXiv preprint arXiv:2012.00234, 2020.
+> Dongjiang Li et al. "RaP-Net: A Region-wise and Point-wise Weighting Network to Extract Robust Features for Indoor Localization." arXiv preprint arXiv:2012.00234, 2020.
 
 If you find our dataset and related project useful in your research, please consider citing:
 
     @article{li2020RaPNet,
-        title={ {RaP-Net}: A Region-wise and Point-wise Weighting Network to Extract Robust Keypoints for Indoor Localization},
-        author={Dongjiang Li and Jinyu Miao and Xuesong Shi and Yuxin Tian and Qiwei Long and Ping Guo and Hongfei Yu and Wei Yang and Haosong Yue and Qi Wei and Fei Qiao},
+        title={ {RaP-Net}: A Region-wise and Point-wise Weighting Network to Extract Robust Features for Indoor Localization},
+        author={Dongjiang Li and Jinyu Miao and Xuesong Shi and Yuxin Tian and Qiwei Long and Tianyu Cai and Ping Guo and Hongfei Yu and Wei Yang and Haosong Yue and Qi Wei and Fei Qiao},
         journal={arXiv preprint arXiv:2012.00234},
         year={2020}
     }
@@ -51,20 +51,20 @@ change compared to existing locations. Figure below (b) shows some samples extra
 On the other hand, in order to enlarge the training and validation data, we collect 64 new locations. Those data are all taken by cameras on cellphones and most of them keep almost the same viewpoint, but they contain appearance changes and dynamic occlusions as shown in figure above (c).
 
 ## Data description
->The dataset is composed of 94 locations. Images in each locations describe the same real-world place but in different visual conditions.
+>The dataset is composed of 93 locations. Images in each locations describe the same real-world place but in different visual conditions.
 
-Our released dataset is a collection of $97$ distinct locations including $1553$ RGB images.  To the best of our knowledge, it is the first dataset of real-world indoor scenes that can be used for training attention mechanisms. In the 46 locations of office, home and corridor, there are moderate scene changes and significant illumination changes. In the other 48 locations of market, restaurant and station, illumination is relatively stable but there are many people and dynamic objects.
+Our released dataset is a collection of $93$ distinct locations including $1553$ RGB images.  To the best of our knowledge, it is the first dataset of real-world indoor scenes that can be used for training attention mechanisms. In the 45 locations of office, home and corridor, there are moderate scene changes and significant illumination changes. In the other 48 locations of market, restaurant and station, illumination is relatively stable but there are many people and dynamic objects.
 
 
 | Scene | Locations* | Images   | Main challenges |
 | :-------------: |:-------------:| :-------------:|:-------------:|
-| office | 7+6 | 270 |illumination changes |
+| office | 6+6 | 270 |illumination changes |
 | home | 9+7 | 232 |moved furnitures |
 | corridor | 12+5 | 291 |large illumination changes |
 | market | 23+8 | 527 |high dynamics |
 | restaurant | 5+4 | 135 |high dynamics |
 | station | 8+0 | 98 |dynamics, repetitive patterns |
-| **Total** | **64+30** | **1553** | |
+| **Total** | **63+30** | **1553** | |
 
 \* (newly collected locations + derived from OpenLORIS-Scene dataset)
 
